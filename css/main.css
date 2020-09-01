@@ -1,0 +1,22 @@
+main{
+    display: block;
+    height: 100%;
+    width: calc(100% - 200px);
+    background-color: #d3e5f2;
+}
+
+main header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height:45px;
+    background-color: #0b07e7;
+    width: 100%;
+
+}
+main header p{
+    margin: 0;
+    color: #d3e5f2;
+    padding: 0 20px;
+}
