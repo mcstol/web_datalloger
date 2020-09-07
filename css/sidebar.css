@@ -2,5 +2,18 @@ sidebar{
     display: block;
     height: 100%;
     width: 200px;
-    background-color: #1d25ff;
+    background-color:#fafafc;
+}
+sidebar .menuTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+sidebar .menuTitle img{
+    height: 50px;
+    width: 50px;
+}
+sidebar .menuTitle h2{
+    font-size: 15pt;
 }
