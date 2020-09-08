@@ -1,0 +1,16 @@
+@font-face{
+    font-family: 'OverpassMono';
+    src: '../fonts/OverpassMono-Regular.ttf';
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: ')verpassMono';
+    src: '../fonts/OverpassMono-Bold.ttf';
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'OverpassMono';
+    src: '../fonts/OverpassMono-Light.ttf';
+    font-weight:lighter;
+}

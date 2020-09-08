@@ -10,13 +10,26 @@ main header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height:45px;
+    height:70px;
     background-color: #0b07e7;
     width: 100%;
 
 }
-main header p{
+main header a{
     margin: 0;
     color: #d3e5f2;
     padding: 0 20px;
+    font-size: 16pt;
+}
+
+main header span{
+    margin: 0;
+    color: #d3e5f2;
+    padding: 0 20px;
+    font-size: 16pt;
+}
+main header a:hover {
+    color: #d3e5f2;
+    text-decoration: none;  
+    font-weight: bold;  
 }
