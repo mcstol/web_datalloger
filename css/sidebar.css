@@ -1,10 +1,11 @@
-sidebar{
+sidebar {
     display: block;
     height: 100%;
     width: 200px;
-    background-color:#0b07e7;
+    background-color: #0b07e7;
 }
-sidebar .menuTitle{
+
+sidebar .menuTitle {
     color: #0b07e7;
     display: flex;
     flex-direction: column;
@@ -13,29 +14,41 @@ sidebar .menuTitle{
     height: 70px;
 }
 
-sidebar .menuTitle img{
+sidebar .menuTitle img {
     height: 40px;
     width: 40px;
 }
-sidebar .menuTitle h2{
+
+sidebar .menuTitle h2 {
     font-size: 15pt;
+    /* color: #0b07e7; */
+    /* text-decoration: none; */
 }
-sidebar .menu a{
+
+sidebar .menuTitle h2 a {
+    /* text-decoration: none; */
+    text-decoration-line: none;
+    color: #0b07e7;
+}
+
+sidebar .menu a {
     text-decoration: none;
-    color:#d3e5f2;
+    color: #d3e5f2;
 }
-sidebar .menu a:hover{
+
+sidebar .menu a:hover {
     text-decoration: none;
-    color:#000000;
+    color: #000000;
 }
-sidebar  li{
+
+sidebar li {
     /* border: 1px solid red; */
     text-align: left;
     padding-left: 30px;
     padding-bottom: 15px;
     padding-top: 15px;
 }
-sidebar  li a svg{
+
+sidebar li a svg {
     margin-right: 8px;
 }
-
