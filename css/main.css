@@ -23,6 +23,10 @@ main header a {
     text-decoration: none;
 }
 
+main header svg {
+    padding-right: 5px;
+}
+
 main header h2 {
     margin: 0;
     color: #d3e5f2;
