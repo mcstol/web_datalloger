@@ -1,48 +1,25 @@
 var xhr = new XMLHttpRequest();
-var link1 = document.querySelector('.link1')
-link1.addEventListener('click', () => {
-    xhr.open('get', 'http://127.0.0.1:5500//views/historic.html', true);
+
+const dominio = 'http://127.0.0.1:5500'
+
+function atualizaMain(link) {
+    xhr.open('get', link, true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
             document.querySelector("main").innerHTML = xhr.responseText;
         }
     }
     xhr.send();
+}
 
-})
+document.querySelector('.link1')
+    .addEventListener('click', () => atualizaMain(dominio + '/views/historic.html'))
 
-var link1 = document.querySelector('.link2')
-link1.addEventListener('click', () => {
-    xhr.open('get', 'http://127.0.0.1:5500//views/email.html', true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            document.querySelector("main").innerHTML = xhr.responseText;
-        }
-    }
-    xhr.send();
+document.querySelector('.link2')
+    .addEventListener('click', () => atualizaMain(dominio + '/views/email.html'))
 
-})
+document.querySelector('.link3')
+    .addEventListener('click', () => atualizaMain(dominio + '/views/login.html'))
 
-var link1 = document.querySelector('.link3')
-link1.addEventListener('click', () => {
-    xhr.open('get', 'http://127.0.0.1:5500//views/login.html', true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            document.querySelector("main").innerHTML = xhr.responseText;
-        }
-    }
-    xhr.send();
-
-})
-
-var link1 = document.querySelector('.link4')
-link1.addEventListener('click', () => {
-    xhr.open('get', 'http://127.0.0.1:5500//views/donwload.html', true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            document.querySelector("main").innerHTML = xhr.responseText;
-        }
-    }
-    xhr.send();
-
-})
+document.querySelector('.link4')
+    .addEventListener('click', () => atualizaMain(dominio + '/views/donwload.html'))
