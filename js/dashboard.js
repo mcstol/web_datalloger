@@ -1,6 +1,6 @@
 var xhr = new XMLHttpRequest();
 
-const dominio = 'http://127.0.0.1:5500'
+const dominio = 'http://192.168.0.64:8080'
 
 function atualizaMain(link) {
     xhr.open('get', link, true);
@@ -19,7 +19,7 @@ document.querySelector('.link2')
     .addEventListener('click', () => atualizaMain(dominio + '/views/email.html'))
 
 document.querySelector('.link3')
-    .addEventListener('click', () => atualizaMain(dominio + '/views/login.html'))
+    .addEventListener('click', () => atualizaMain(dominio + '/views/profile.html'))
 
 document.querySelector('.link4')
     .addEventListener('click', () => atualizaMain(dominio + '/views/donwload.html'))
