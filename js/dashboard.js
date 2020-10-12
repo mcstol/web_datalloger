@@ -23,3 +23,10 @@ document.querySelector('.link3')
 
 document.querySelector('.link4')
     .addEventListener('click', () => atualizaMain(dominio + '/views/donwload.html'))
+
+
+
+
+function save() {
+    console.log("clicou o botão!")
+}
