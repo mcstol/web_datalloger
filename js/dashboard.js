@@ -1,6 +1,6 @@
 var xhr = new XMLHttpRequest();
 var senhasIguais = false
-const dominio = 'http://192.168.0.64:8080'
+const dominio = 'http://192.168.0.18:8080'
 
 function atualizaMain(link) {
     xhr.open('get', link, true);
@@ -19,7 +19,7 @@ document.querySelector('.link2')
     .addEventListener('click', () => atualizaMain(dominio + '/views/email.html'))
 
 document.querySelector('.link3')
-    .addEventListener('click', () => atualizaMain(dominio + '/views/profile.html'))
+    .addEventListener('click', () => atualizaMain(dominio + '/views/crud/readAll.html'))
 
 document.querySelector('.link4')
     .addEventListener('click', () => atualizaMain(dominio + '/views/donwload.html'))
