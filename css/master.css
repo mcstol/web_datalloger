@@ -1,0 +1,15 @@
+.content-master table {
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(131, 129, 129);
+  overflow: scroll;
+}
+
+.content-master section {
+  border: 0px 2px 2px 2px solid red;
+}
+
+.content-master tr {
+  border-bottom: 2px solid black;
+}

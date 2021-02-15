@@ -1,54 +1,56 @@
 sidebar {
-    display: block;
-    height: 100%;
-    width: 200px;
-    background-color: #0b07e7;
+  box-sizing: 1vh;
+  display: block;
+  height: 100%;
+  width: 200px;
+  background-color: #0b07e7;
 }
 
 sidebar .menuTitle {
-    color: #0b07e7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fafafc;
-    height: 70px;
+  color: #0b07e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafc;
+  height: 70px;
 }
 
 sidebar .menuTitle img {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 sidebar .menuTitle h2 {
-    font-size: 15pt;
-    /* color: #0b07e7; */
-    /* text-decoration: none; */
+  font-size: 15pt;
+  /* color: #0b07e7; */
+  /* text-decoration: none; */
 }
 
 sidebar .menuTitle h2 a {
-    /* text-decoration: none; */
-    text-decoration-line: none;
-    color: #0b07e7;
+  /* text-decoration: none; */
+  text-decoration-line: none;
+  color: #0b07e7;
 }
 
 sidebar .menu a {
-    text-decoration: none;
-    color: #d3e5f2;
+  text-decoration: none;
+  color: #d3e5f2;
 }
 
 sidebar .menu a:hover {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 sidebar li {
-    /* border: 1px solid red; */
-    text-align: left;
-    padding-left: 30px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+  /* border: 1px solid red;  */
+  text-align: left;
+  padding-left: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
-sidebar li a svg {
-    margin-right: 8px;
+sidebar li a i {
+  /* border: 1px solid red; */
+  margin-right: 8px;
 }

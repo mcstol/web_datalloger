@@ -1,6 +1,6 @@
 var xhr = new XMLHttpRequest();
 var senhasIguais = false
-const dominio = 'http://192.168.0.18:8080'
+const dominio = 'http://127.0.0.1:8080/'
 
 function atualizaMain(link) {
     xhr.open('get', link, true);
@@ -13,16 +13,19 @@ function atualizaMain(link) {
 }
 
 document.querySelector('.link1')
-    .addEventListener('click', () => atualizaMain(dominio + '/views/historic.html'))
+    .addEventListener('click', () => atualizaMain(dominio + 'views/crud/put.html')) // alterado para teste crud original /views/historic.html
 
 document.querySelector('.link2')
-    .addEventListener('click', () => atualizaMain(dominio + '/views/email.html'))
+    .addEventListener('click', () => atualizaMain(dominio + '/views/crud/post.html'))// alterado para teste crud original /views/email.html
 
 document.querySelector('.link3')
-    .addEventListener('click', () => atualizaMain(dominio + '/views/crud/readAll.html'))
+    .addEventListener('click', () => atualizaMain(dominio + '/views/crud/readAll.html')) //ALterado para teste crud
 
 document.querySelector('.link4')
-    .addEventListener('click', () => atualizaMain(dominio + '/views/donwload.html'))
+    .addEventListener('click', () => atualizaMain(dominio + 'views/crud/delete.html')) //alterado para teste crud original /views/donwload.html
+
+document.querySelector('.link5')
+    .addEventListener('click', () => atualizaMain(dominio + 'views/master.html')) //alterado para teste crud original /views/donwload.html
 
 
 

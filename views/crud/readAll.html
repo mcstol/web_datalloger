@@ -1,23 +1,24 @@
 <header>
-    <h2><i class="fas fa-user "></i>Lista clientes</h2>
+    <h2><i class="fas fa-user "></i>Get</h2>
     <a href="#"><i class="fas fa-sign-out-alt"></i>Log out</a>
 </header>
 <div class="content">
     <div class="formProfile">
         <form>
-            <div class="form-group">
-                <table>
-                <tr>
-                    <th>email</th>
-                    <th>senha</th>
-                </tr>
-                <tr>
-                    <td><p><span id="listemail1"></span></p></td>
-                    <td><p><span id="listsenha1"></span></p></td>
-                </tr>
-                </table>
-            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Senha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="clientes">
 
+                    </tr>
+                </tbody>
+            </table>
             <div class="BTNProfile ">
                 <button type="button " class="btn btn-primary " onclick="list()">Listar</button>
             </div>
